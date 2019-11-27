@@ -11,6 +11,6 @@ and C/C++ code (.ino file) for the Arduino board in order to set up and move the
 
 Getting into more detail, using the OpenCV I check each image/frame we take a look at each frame/image and we check if there is any face detected in it. For every face detected we calculate some coordinates that describe where the face is positioned in the image compared to its center. Based on these coordinates we are moving the two servomotors so we can track the face.
 
-## Documentation in progress ...
+## 
 
 
