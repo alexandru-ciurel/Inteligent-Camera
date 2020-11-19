@@ -51,35 +51,4 @@ class Camera:
                 centers.append((xx, yy))
 
         return image_copy, centers
-
-
-'''
-                print(xx, yy, previousX, previousY)
-
-                # The next part of code is for when we have multiple faces detected in our frame
-                # We store the values for the previous detected face in previousX and previousY
-                #
-
-                if xx - 20 > previousX and yy - 20 > previousY:
-                    print('break')
-                    break
-
-                distance = math.sqrt(((xx - previousX) ** 2) + ((previousY - yy) ** 2))
-
-                if distance < minimumdistance:
-                    minXX = xx
-                    minYY = yy
-                    minimumdistance = distance
-
-                minimumdistance = min(minimumdistance, distance)
-            previousX = xx
-            previousY = yy
-            serialOutput = "X{0:d}Y{1:d}".format(minXX, minYY)
-            arduinoSerial.write(str.encode(serialOutput))
-        else:
-            arduinoSerial.write(str.encode('L'))
-            print("nothing detected")
-        return image_copy
-
-
-'''
+    
